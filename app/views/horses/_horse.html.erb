@@ -9,6 +9,13 @@
         <% end %>
       </p>
       <p>Breed: <%= link_to horse.breed.name, horse.breed %></p>
+      <% if horse.image.present? %>
+      <div class="card-image">
+        <figure class="image">
+          <%= image_tag horse.image %>
+        </figure>
+      </div>
+<% end %>
     </div>
     <footer class="card-footer">
       <p class="card-footer-item">
