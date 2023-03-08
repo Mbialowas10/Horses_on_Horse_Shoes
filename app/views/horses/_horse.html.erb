@@ -14,7 +14,7 @@
 
           <div class="card-image">
             <figure class="image">
-              <%= image_tag horse.image %>
+              <%= image_tag horse.image.variant(resize_to_limit: [50,50]) %>
             </figure>
           </div>
         <% end %>
